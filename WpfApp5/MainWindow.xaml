@@ -16,6 +16,7 @@
         <StackPanel Margin="0 5 0 0" Orientation="Horizontal">
             <Button Name="BtnGenerate" Click="BtnGenerate_OnClick" Padding="5" Margin="0 0 5 0" Background="Khaki">Сгенерировать</Button>
             <Button Name="BtnClear" Click="BtnClear_OnClick" Padding="5" Background="Khaki">Очистить список</Button>
+            <Button Name="BtnPrint" Click="BtnPrint_OnClick" Padding="5" Background="Khaki">Печать</Button>
         </StackPanel>
         </StackPanel>
         
