@@ -40,4 +40,23 @@ public partial class MainWindow : Window
     {
         StudentList.Items.Clear();
     }
+
+    private void BtnPrint_OnClick(object sender, RoutedEventArgs e)
+    {
+        PrintDialog printDialog = new PrintDialog();
+        
+        if(printDialog.ShowDialog() == false)
+            return;
+
+        StringBuilder sb = new StringBuilder();
+        foreach (string item in StudentList.Items)
+        {
+            sb.AppendLine(item.ToString());
+        }
+
+        TextBlock textBlock = new TextBlock();
+        textBlock.Text = sb.ToString();
+        
+        printDialog.PrintVisual(textBlock, "fdfkrf");
+    }
 }
